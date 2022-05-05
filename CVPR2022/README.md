@@ -81,3 +81,31 @@ author: M. Jehanzeb Mirza, Marc Masana, Horst Possegger, Horst Bischof. Institut
 > The only information we store for each task are the statistical parameters as we categorize each domain by the change in first and second order statistics. Thus, as each task arrives, we simply 'plug and play' the statistical vectors for the corresponding task into the model and it immediately starts to perform well on that task. 
 
 ![image-20220505155755568](../screenshot/DISC.png)
+
+# 恶劣感知任务 Adverse Perception Task
+
+**1. NightLab: A Dual-level Architecture with Hardness Detection for Segmentation at Night** [paper](https://arxiv.org/abs/2204.05538) | [code](https://github.com/xdeng7/NightLab)
+
+author: Xueqing Deng, Peng Wang , Xiaochen Lian , Shawn Newsam. EECS, University of California at Merced
+
+> In this paper, we propose NightLab, a novel nighttime segmentation framework that leverages multiple deep learning models imbued with night-aware features to yield State-of-The-Art (SoTA) performance on multiple night segmentation benchmarks. 
+>
+> Notably, NightLab contains models at two levels of granularity, i.e. **image and regional**, and each level is composed of light adaptation and segmentation modules. 
+>
+> Given a nighttime image, the image level model provides an initial segmentation estimate while, in parallel, a **hardness detection module** identifies regions and their surrounding context that need further analysis.
+>
+> A regional level model focuses on these difficult regions to provide a significantly improved segmentation. 
+
+![image-20220505203155462](../screenshot/NightLab.png)
+
+**2. FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation** [paper](https://arxiv.org/abs/2204.01587) | [code](https://github.com/sohyun-l/fifo)
+
+author: Sohyun Lee, Taeyoung Son, Suha Kwak. GSAI, POSTECH
+
+> In this context, we propose a new method for learning semantic segmentation models robust against fog. 
+>
+> Its key idea is to consider the fog condition of an image as its style and close the gap between images with different fog conditions in neural style spaces of a segmentation model. In particular, since the neural style of an image is in general affected by other factors as well as fog, we introduce **a fog-pass filter module** that learns to extract a fog-relevant factor from the style.
+>
+> **Optimizing the fog-pass filter and the segmentation model** alternately gradually closes the style gap between different fog conditions and allows to learn fog-invariant features in consequence. 
+
+![image-20220505215837648](../screenshot/FIFO.png)
