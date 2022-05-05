@@ -63,3 +63,21 @@
    >By integrating the flexible gradient descent and informative proximal mapping, we unfold the iterative PGD algorithm into a trainable DNN. 
 
 ![image-20220505155755568](../screenshot/DGUNet.png)
+
+# 增量学习 Incremental Learning
+
+**1. An Efficient Domain-Incremental Learning Approach to Drive in All Weather Conditions**  [paper](https://arxiv.org/abs/2204.08817) 
+
+author: M. Jehanzeb Mirza, Marc Masana, Horst Possegger, Horst Bischof. Institute of Computer Graphics and Vision, Graz University of Technology
+
+> When adapting these models for changed environments, such as different weather conditions, they are prone to **forgetting previously learned information**. 
+>
+> This catastrophic forgetting is typically addressed via **incremental learning** approaches which usually re-train the model by either keeping a memory bank of training samples or keeping a copy of the entire model or model parameters for each scenario. 
+>
+> While these approaches show impressive results, they can be prone to scalability issues and their applicability for autonomous driving in all weather conditions has not been shown.
+>
+> In this paper we propose DISC -- **Domain Incremental through Statistical Correction** -- a simple online zero-forgetting approach which can incrementally learn new tasks (i.e weather conditions) without requiring re-training or expensive memory banks. 
+>
+> The only information we store for each task are the statistical parameters as we categorize each domain by the change in first and second order statistics. Thus, as each task arrives, we simply 'plug and play' the statistical vectors for the corresponding task into the model and it immediately starts to perform well on that task. 
+
+![image-20220505155755568](../screenshot/DISC.png)
