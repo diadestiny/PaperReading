@@ -109,3 +109,21 @@ author: Sohyun Lee, Taeyoung Son, Suha Kwak. GSAI, POSTECH
 > **Optimizing the fog-pass filter and the segmentation model** alternately gradually closes the style gap between different fog conditions and allows to learn fog-invariant features in consequence. 
 
 ![image-20220505215837648](../screenshot/FIFO.png)
+
+
+
+**3. Both Style and Fog Matter: Cumulative Domain Adaptation for Semantic Foggy Scene Understanding** [paper](https://arxiv.org/abs/2112.00484)
+
+author: Xianzheng Ma, Zhixiang Wang, Yacheng Zhan et al. Wuhan University
+
+> Considering the success in semantic scene understanding under clear weather, we think it is reasonable to transfer knowledge learned from clear images to the foggy domain. 
+>
+> As such, the problem becomes to bridge the domain gap between clear images and foggy images. Unlike previous methods that mainly focus on closing the domain gap caused by fog -- defogging the foggy images or fogging the clear images, we propose to **alleviate the domain gap by considering fog influence and style variation simultaneously.** 
+>
+> The motivation is based on our finding that **the style-related gap and the fog-related gap can be divided and closed respectively, by adding an intermediate domain.** 
+>
+> Thus, we propose a new pipeline to cumulatively adapt style, fog and the dual-factor (style and fog). Specifically, we devise a unified framework to disentangle the style factor and the fog factor separately, and then the dual-factor from images in different domains. 
+>
+> Furthermore, we collaborate the disentanglement of three factors with a novel cumulative loss to thoroughly disentangle these three factors. 
+
+![image-20220506142055810](../screenshot/CuDA-Net.png)
