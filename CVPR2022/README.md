@@ -34,6 +34,26 @@
 
 ![image-20220505160013287](../screenshot/DCD-GAN.png)
 
+# 低光照增强 Low Light Enhance
+
+1. **Toward Fast, Flexible, and Robust Low-Light Image Enhancement** [paper](https://arxiv.org/abs/2204.10137) | [code](https://github.com/vis-opt-group/sci)
+
+   author: Long Ma, Tengyu Ma, Zhongxuan Luo et al. Dalian University of Technology
+
+   > Existing low-light image enhancement techniques are mostly not only difficult to deal with both visual quality and computational efficiency but also commonly invalid in unknown complex scenarios. 
+   >
+   > In this paper, we develop a new **Self-Calibrated Illumination (SCI) learning framework** for fast, flexible, and robust brightening images in real-world low-light scenarios. 
+   >
+   > To be specific, we establish a cascaded illumination learning process with weight sharing to handle this task. 
+   >
+   > Considering the computational burden of the cascaded pattern, we construct the self-calibrated module which realizes the convergence between results of each stage, producing the gains **that only use the single basic block for inference** (yet has not been exploited in previous works), which drastically diminishes computation cost. 
+   >
+   > We then define the unsupervised training loss to elevate the model capability that can adapt to general scenes. 
+   >
+   > Further, we make comprehensive explorations to excavate SCI's inherent properties (lacking in existing works) including operation-insensitive adaptability (acquiring stable performance under the settings of different simple operations) and model-irrelevant generality (can be applied to illumination-based existing works to improve performance). 
+
+   ![image-20220506160424718](../screenshot/SCI.png)
+
 ## 图像复原Image Restoration
 
 1. **TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions** [paper](https://arxiv.org/abs/2111.14813) | [code](https://github.com/jeya-maria-jose/TransWeather)
