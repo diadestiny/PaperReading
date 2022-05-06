@@ -102,7 +102,7 @@ author: M. Jehanzeb Mirza, Marc Masana, Horst Possegger, Horst Bischof. Institut
 
 ![image-20220505155755568](../screenshot/DISC.png)
 
-# 恶劣感知任务 Adverse Perception Task
+# 恶劣天气和低照度感知任务 Adverse Weather and Low Light Perception Task
 
 **1. NightLab: A Dual-level Architecture with Hardness Detection for Segmentation at Night** [paper](https://arxiv.org/abs/2204.05538) | [code](https://github.com/xdeng7/NightLab)
 
@@ -147,3 +147,4 @@ author: Xianzheng Ma, Zhixiang Wang, Yacheng Zhan et al. Wuhan University
 > Furthermore, we collaborate the disentanglement of three factors with a novel cumulative loss to thoroughly disentangle these three factors. 
 
 ![image-20220506142055810](../screenshot/CuDA-Net.png)
+
