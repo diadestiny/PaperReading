@@ -54,7 +54,7 @@
 
    ![image-20220506160424718](../screenshot/SCI.png)
 
-## 图像复原Image Restoration
+# 图像复原Image Restoration
 
 1. **TransWeather: Transformer-based Restoration of Images Degraded by Adverse Weather Conditions** [paper](https://arxiv.org/abs/2111.14813) | [code](https://github.com/jeya-maria-jose/TransWeather)
 
