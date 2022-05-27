@@ -20,7 +20,7 @@
 
 ## RGB-D Cross-Modality Fusion for Perception Tasks
 
-**Cross-modality Discrepant Interaction Network for RGB-D Salient Object Detection** [paper](https://arxiv.org/abs/2108.01971) | [code](https://github.com/1437539743/CDINet-ACM-MM21) *ACMMM2021*
+**1. Cross-modality Discrepant Interaction Network for RGB-D Salient Object Detection** [paper](https://arxiv.org/abs/2108.01971) | [code](https://github.com/1437539743/CDINet-ACM-MM21) *ACMMM2021*
 
 author: Chen Zhang, Runmin Cong, Sam Kwong et al. BJTU
 
@@ -36,3 +36,14 @@ author: Chen Zhang, Runmin Cong, Sam Kwong et al. BJTU
 
 ![image](../screenshot/CDINet.png)
 
+**2. Does depth estimation help object detection?**  [paper](http://arxiv.org/abs/2204.06512)  arxiv2022
+
+author: Bedrettin Cetinkaya, Sinan Kalkan, Emre Akbas. Middle East Techical University Ankara, Turkey
+
+> Ground-truth depth, when combined with color data, helps improve object detection accuracy over baseline models that only use color. 
+>
+> However, **estimated depth does not always yield improvements.** Many factors affect the performance of object detection when estimated depth is used. 
+>
+> In this paper, we comprehensively investigate these factors with detailed experiments, such as using **ground-truth vs. estimated depth**, effects of **different state-of-the-art depth estimation networks**, effects of using different indoor and outdoor RGB-D datasets as training data for depth estimation, and **different architectural choices for integrating depth** to the base object detector network. We propose **an early concatenation strategy of depth**, which yields higher mAP than previous works’ while using significantly fewer parameters.
+
+![image-20220527164908011](../screenshot/de_od.png)
