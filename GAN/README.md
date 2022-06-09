@@ -20,6 +20,15 @@ author: Tero Karras, Samuli Laine, Timo Ailaet. NVIDIA
 
 ![image-20220608221336317](../screenshot/StyleGAN1.png)
 
+**3. (PULSE)Pulse: Self-supervised Photo Upsampling via Latent Space Exploration of Generative Models** [paper](https://arxiv.org/pdf/2003.03808) | [code](https://github.com/adamian98/pulse) *CVPR2020*
+
+author: Sachit Menon, Alexandru Damian, Shijia Hu, et al. Duke University
+
+> 1. 提出了超分算法的新范式：结合预训练好的StyleGAN，以完全**无监督**实现，不需要成对的LR-HR图像进行训练。
+> 2. 不同于以往超分学习LR到HR的映射思路(SRCNN或者SRGAN)，本文采用GAN Inversion反演思路，首先生成器G用高斯分布约束初始化latent code, 结合StyleGAN来生成目标HR图像，降采样后和原始的LR图像在判别器D通过downscaling loss来**优化latent code**，以此来生成更好的HR图像。
+
+![img](../screenshot/PULSE)
+
 ## 条件GAN
 
 **1. (SRGAN)Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network** [paper](https://arxiv.org/abs/1609.04802) | [code](https://github.com/tensorlayer/srgan)  CVPR2017
