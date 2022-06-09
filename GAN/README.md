@@ -19,3 +19,16 @@ author: Tero Karras, Samuli Laine, Timo Ailaet. NVIDIA
 > 将Z高斯分布的latent code投影到W空间(**disentanglement**)，**控制生成图像的风格style，加入的noise调节图像的细节**，style和noise借助style transfer的常用AdaIN操作。
 
 ![image-20220608221336317](../screenshot/StyleGAN1.png)
+
+## 条件GAN
+
+**1. (SRGAN)Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network** [paper](https://arxiv.org/abs/1609.04802) | [code](https://github.com/tensorlayer/srgan)  CVPR2017
+
+authors: Christian Ledig, Lucas Theis, Ferenc Huszar, et al. Twitter 
+
+> 1. SGGAN由SSResNet Generator和Discriminator组成，损失函数由对抗损失adversarial loss(**结合GAN提高真实感**)和内容损失content loss组成，而content loss由MSE损失(**像素级相似性**)和**perceptual loss感知损失**(**特征相似性**)组成。
+>
+> 2. **perceptual loss感知损失**是基于VGG不同卷积层输出的feature map的MSE损失
+> 3. 结合GAN的训练方式(**条件GAN**)和**感知损失**使超分修复图像更符合人眼感知(MOS主观评估手段)，而PSNR/SSIM越高，人眼感知效果可能下降。
+
+![image-20220609145620641](../screenshot/SRGAN.png)
