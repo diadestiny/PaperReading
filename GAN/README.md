@@ -29,6 +29,17 @@ author: Sachit Menon, Alexandru Damian, Shijia Hu, et al. Duke University
 
 ![img](../screenshot/PULSE)
 
+**4. GLEAN: Generative Latent Bank for Large-Factor Image Super-Resolution** [paper](https://arxiv.org/pdf/2012.00739) | [code](https://github.com/ckkelvinchan/GLEAN)  *CVPR2021 oral*
+
+author: Kelvin C.K. Chan, Xintao Wang, Xiangyu Xu, et al. NTU
+
+> 1. 作者认为ESRGAN这类基于GAN超分模型修复效果依旧不够自然，而PULSE虽然修复效果自然逼真，但保真度较低(和gt图像差别很大)，因此提出**encoder-pretrained model(Style GAN)-decoder**结构，结合skip-connect，将Encoder不同层的multi-resolution feature作为latent code。
+> 2. 这种架构能够减轻在Encoder-Decoder网络中同时学习保真度(和gt差距程度)和纹理生成的负担，因为预训练的Latent Bank已经捕获了丰富的纹理先验(自然逼真程度)。
+
+![image-20220610183443860](../screenshot/GLEAN.png)
+
+
+
 ## 条件GAN
 
 **1. (SRGAN)Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network** [paper](https://arxiv.org/abs/1609.04802) | [code](https://github.com/tensorlayer/srgan)  CVPR2017
