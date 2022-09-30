@@ -38,10 +38,9 @@
 
 3. **Dynamic Convolution: Attention over Convolution Kernels** [paper](https://arxiv.org/abs/1912.03458) | [code](https://github.com/kaijieshi7/Dynamic-convolution-Pytorch)  *CVPR 2020*
 
-​       author: Yinpeng Chen, Xiyang Dai, Mengchen Liu, et al.  Microsoft
-
-> 1. we present Dynamic Convolution, a new design that increases model complexity without increasing the network depth or width. 
-> 2. Instead of using a single convolution kernel per layer, dynamic convolution aggregates multiple parallel convolution kernels dynamically based upon their attentions, which are input dependent. 
-> 3. Assembling multiple kernels is not only computationally efficient due to the small kernel size, but also has more representation power since these kernels are aggregated in a non-linear way via attention.
+   author: Yinpeng Chen, Xiyang Dai, Mengchen Liu, et al.  Microsoft
+   > 1. we present Dynamic Convolution, a new design that increases model complexity without increasing the network depth or width. 
+   > 2. Instead of using a single convolution kernel per layer, dynamic convolution aggregates multiple parallel convolution kernels dynamically based upon their attentions, which are input dependent. 
+   > 3. Assembling multiple kernels is not only computationally efficient due to the small kernel size, but also has more representation power since these kernels are aggregated in a non-linear way via attention.
 
 ![image-20220930202855056](../screenshot/DCL.png)
